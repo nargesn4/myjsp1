@@ -3,8 +3,10 @@ package com.mySchool;
 import com.google.appengine.api.utils.SystemProperty;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Properties;
 
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,12 +18,10 @@ public class HelloAppEngine extends HttpServlet {
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response)
       throws IOException {
-
-    Properties properties = System.getProperties();
-
     response.setContentType("text/plain");
-    response.getWriter().println("Hello App Engine - Standard using "
-        + SystemProperty.version.get() + " Java " + properties.get("java.specification.version"));
+    response.getWriter().println("Welkom to servlet");
+
+
   }
 
   public static String getInfo() {
