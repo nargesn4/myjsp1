@@ -1,5 +1,5 @@
 <!Doctype html>
-<%@page import="com.mySchool.Auto" %>
+<%@ page import="com.mySchool.Auto" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.mySchool.DataUtils" %>
 <%@ page import="java.util.ArrayList" %>

@@ -76,7 +76,6 @@ try {
         if (sint>=0){
             double Fahrenheit = Math.round(sint * 1.8 + 32);
             Fahrenheit1 = (int) Fahrenheit;
-            request.setAttribute("Fahrenheit", );
             //fahrenheit = Integer.toString(Fahrenheit1);
         }else if (mint>=0){
             double Celsius = (mint - 32) / 1.8;
